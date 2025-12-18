@@ -1,0 +1,936 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HiMCM/MidMCM LaTeX Template %%
+%% 2025 HiMCM/MidICM           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[a4paper,
+            left=0.85in,
+            right=0.75in,
+            top=1in,
+            bottom=1.1in]{geometry}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Replace ABC in the next line with your chosen problem
+% and replace 1111111 with your Team Control Number
+\newcommand{\Problem}{B}
+\newcommand{\Team}{00000}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[skip=10pt]{caption}
+\usepackage{amsmath,amssymb,amsthm}
+
+\usepackage{caption}
+\usepackage[pdftex]{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
+\lhead{Team \Team}
+\rhead{}
+\cfoot{}
+
+\newtheorem{theorem}{Theorem}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}
+\setlength{\parindent}{2em}    % 段首缩进
+\setlength{\parskip}{0.25\baselineskip}     % 段落间距紧凑
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}
+    \section*{Post-Contest Disclosure Notice}
+\end{center}
+
+
+This document is a post-contest version adapted from our team’s work for the \textbf{HiMCM 2025 competition.}
+
+To avoid any potential sensitivity or unintended association with the anonymous judging process, the original Team Control Number has been intentionally replaced in this version.
+
+\textbf{Original Authors:}
+Winston Huang, Eric Wang, George Wang
+
+\textbf{Advisor:}
+Lexie Guo
+
+This version is uploaded solely for personal archival and academic portfolio purposes on the \textbf{GitHub} account of the first author,\textbf{ Winston Huang}. \textbf{It is not intended for submission, redistribution, or use in any ongoing or future competitions.}
+
+\newpage
+
+
+\graphicspath{{.}}  % Place your graphic files in the same directory as your main document
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif, .png}
+\thispagestyle{empty} 
+\vspace*{-25mm}
+
+
+\begin{center}
+  {\fontsize{10}{10} Team Control Number\selectfont}\\[0.8em]
+  {\fontsize{24}{24}\selectfont\textcolor{red}{\textbf{\Team}}}\\[0.8em]
+  
+  {\fontsize{10}{10} Problem Chosen\selectfont}\\[0.6em]
+  {\fontsize{24}{24}\selectfont\textcolor{red}{\textbf{\Problem}}}\\[0.6em]
+  
+  {\fontsize{16}{10} \textbf{2025}\selectfont}\\[0.5em]
+  {\fontsize{10}{10} \textbf{HiMCM/MidMCM}\selectfont\\
+  \fontsize{10}{10} \textbf{Summary Sheet}\selectfont}
+\end{center}
+
+\vspace{-1.3cm}
+\begin{center}
+    \rule{169.4 mm}{0.4pt}
+\end{center}
+
+
+
+\vspace{-0.2cm}
+%%%%%%%%%%% Begin Summary %%%%%%%%%%%
+\textit{Original authors for this article are Winston Huang, Eric Wang, and George Wang.}
+
+\noindent
+Mega-sport causes generate substantial environmental impacts, but systematic, transparent and specialized tools for sustainability-oriented host city selection remain limited. To support environmental sustainability-oriented planning for mega-sport events, we develop a transparent and reliable \textbf{Hierarchical Multi-Criteria Decision-Making} (H-MCDM) framework that integrates a structured indicator system, weights calculated by AHP, TOPSIS evaluation and an independent \textbf{GHG-emission threshold} to prevent double counting and provide a double-confirmation  mechanism. Our model includes \textbf{13 quantitative and 4 qualitative }indicators across energy consumption, water usage, waste generation and other environmental dimensions. We also designed an \textbf{Electricity Supply Structure Index} (S) to complement our criteria system. AHP weighting results are consistent with a CR \textbf{less than 0.10}, with \textbf{energy consumption} receiving the highest importance (42.31\%), followed by \textbf{water} and \textbf{waste} (22.72\% each). Our key innovation is coupling TOPSIS (enhanced by the S index) with an independent GHG-emission threshold for double validation.
+
+Using Super Bowl LIX in New Orleans as a baseline case study, we quantify \textbf{$S=0.44$, eGRID SRMV = 0.3366 tCO$_2$e/MWh,} approximately \textbf{72 MWh} of venue energy consumption, around \textbf{182 million km} of aggregate audience travel, about \textbf{630 m$^3$} of venue water use, and roughly \textbf{45 tons} of solid waste. We also conducted an assessment of how indicator values may vary as location changes. These assessments illustrate how local grid composition, water stress and waste management systems shape sustainability performance.
+
+Applying \textbf{AHP-TOPSIS-Threshold} to previously hosted cities, \textbf{Santa Clara} ranks first (C$_i$ = 0.5541), slightly ahead of \textbf{Glendale} (0.5511) and \textbf{Las Vegas} (0.5129). Among never-hosted candidates we selected, \textbf{Seattle} leads decisively (C$_i$=0.6994). Robustness analyses show exceptional stability: under 2000 trials of ±10\% AHP weight perturbations the top rank never changes, and under ±20\%, Santa Clara remains first in \textbf{91.48\%} of \textbf{5000 Monte Carlo} runs. With 5\% data noise, the top rank persists in\textbf{ 95\%} of runs. Additionally, we found a Spearman correlation (C$_i$, -E$_i$) = \textbf{0.657} which confirms a \textbf{moderately strong but non-redundant} alignment between TOPSIS results and the GHG threshold.
+
+To address multi-venue games like the Olympics, we extend the model with an Olympics module including M$_1$–M$_4$ (hotel density, venue compactness, extreme-weather risk, and heat-stress exposure). Among ten candidate cities, \textbf{Tokyo} ranks first (TOPSIS = 0.6418), while \textbf{Los Angeles (0.3176) ranks lowest} due to fossil energy intensity and climatic vulnerability. These findings highlight the shift from grid-dominant factors in single-venue events to spatial and climatic drivers at Olympic scale. 
+
+Overall, our integrated AHP-TOPSIS-GHG-threshold framework offers a stable and generalizable tool for selecting environmentally sustainable host cities. We recommend \textbf{Santa Clara }for the \textbf{2029} Super Bowl, Seattle as the strongest first-time candidate, and Tokyo as the leading Olympic host among the cities evaluated.
+% to here
+%%%%%%%%%%% End Summary %%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\pagestyle{fancy}
+% Uncomment the next line to generate a Table of Contents
+%\tableofcontents
+\newpage
+\setcounter{page}{1}
+\addtocounter{page}{1}
+\rhead{Page \thepage\ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+    \textbf{\Large{Table of Contents}}
+\end{center}
+\renewcommand{\contentsname}{}
+\vspace{-18mm}
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+\subsection{Background}
+
+As sustainability and carbon neutrality have become central themes in global development, evaluating the environmental impact of large-scale events has grown increasingly significant.
+
+Mega-events such as the Super Bowl concentrate attendance, infrastructure operations, and media logistics into a short time period, generating highly localized environmental impacts. The dominant contributors typically include audiences' travel, venue and broadcast electricity consumption, accommodation services, materials for temporary works, and waste management. Because these drivers are host-specific—shaped by local grid carbon intensity, public-transport accessibility, climate-driven water demand and supply, and waste-sorting capacity—environmental performance can vary substantially across different potential host cities. Against this context, evaluating host-city options through a transparent, indicator-based framework enables decision makers to compare alternatives on a consistent basis and align the event with contemporary sustainability expectations.
+\subsection{Problem Restatement}
+The objective of this research problem is constructing a mathematical model, or multiple models, to help the National Football League to better evaluate, and provide recommendation for the ideal city for holding the \textbf{2029 Super Bowl LXIII}. We also need to provide the sensitivity analysis of our model and extend it to other global sport events. The evaluation criteria includes \textbf{energy consumption, water usage, waste generation, green house gas (GHG) emission, and other effects}, and both qualitative and quantitative criteria are accepted. Following tasks are also asked to do in the problem:
+\begin{itemize}
+    \item Identifying sub-criteria under each main criterion mentioned in question.
+    \item Use Super Bowl LIX, in New Orleans, as a baseline study case to assess environmental impact of mega-sport events.
+    \item Construct a multi-criteria decision-making model evaluating how location specific characteristics can make a difference.
+    \item Applying model on 6 cities hosted previously on schedule and 3 potential cities which NFL football teams but haven hosted.
+    \item Extending model and make it capable to evaluate places for other sport events.
+    \item Developing feasible strategies for cities to reduce short-run environmental impact and improve sustainability of hosting in future.
+    \item Analyzing the sensitivity and evaluate how the key environmental factors differ between single-game large-scale sporting events and broader multi-venue or multi-sport competitions.
+\end{itemize}
+
+Except for these, a recommendation letter to the NFL is also required. In it, we will identify the most sustainable city for hosting the Super Bowl and present the theoretical rationale behind our model.
+
+\subsection{Our Work}
+Figure~\ref{fig:flowchart} presents the methodological framework of our work, outlining the key steps and decision-making processes.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.93\textwidth]{OurWorkFlow.png}
+    \caption{Flowchart of our modeling work}
+    \label{fig:flowchart}
+\end{figure}
+\section{Model Assumptions}
+To simplify the evaluation of environmental impacts of hosting mega-sport events, we make the following assumptions.
+\subsubsection*{Assumption 1: Representation of Environmental Impact by Five Main Categories}
+We assume that the environmental impact of hosting a mega-sport event can be represented by five major categories: energy consumption, water usage, waste generation, GHG emission, and other effects. Since these five aspects comprehensively capture the main environmental burdens of large-scale events and align with global sustainability metrics such as ISO 20121 and GRI indicators.
+
+\subsubsection*{Assumption 2: Data Measurability and Estimability}
+We assume that all quantitative data we collected are measurable or estimable. In some cases that data is missing, appropriate estimation based on regional features and indirect evaluation is applied.
+
+\subsubsection*{Assumption 3: Independence of Indicators}
+Each indicator is treated as an independent variable. Potential correlations between sub-criteria under each main criteria is considered to be negligible, and possible correlations between sub-criteria under different main criteria is also effectively reduced by AHP method we employed.
+
+\subsubsection*{Assumption 4: Operational Stability during the Event}
+We assume that energy, water, and waste infrastructure is operating under normal conditions without extreme disruptions, interferences or abnormality. Since Super Bowl events are held in cities with mature infrastructure and strong logistical control, with satisfactory operational performance.
+
+\subsubsection*{Assumption 5: GHG Emissions as Threshold}
+We treat GHG emissions as a threshold criterion rather than an evaluation indicator, since GHG emissions aggregate several sub-effects, using them as a constraint avoids double counting and maintains model balance.
+%We assume that the environmental impact of hosting a mega-sport event can be represented by five major categories: energy consumption, water usage, waste generation, GHG emission, and other effects. 
+
+%All quantitative indicators we used are measurable or estimable. When data are missing, appropriate estimation or substitution using regional averages or empirical coefficients is applied. Qualitative ones are rated using a normalized five-level scale.
+
+%Each indicator is treated as an independent variable. Potential correlations between sub-criteria under each main criteria is considered to be negligible, and possible correlations between sub-criteria under different main criteria is reduced by AHP method we employed.
+
+%It is assumed that infrastructure such as energy, water, and waste systems operates under normal conditions during the event period without disruption from extreme weather or system failures.
+
+\section{Indicator System and Data Engineering}
+This section establishes the environmental indicator system, details the criteria and sub-indicators adopted, and describes the data acquisition and normalization process used in the model. Additionally, we use case study as an approach 
+\subsection{Identifying Indicators}
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+    \captionof{table}{\textbf{Factors for Criteria}}
+    \label{tab:indicator}
+    \begin{tabular}{clcl}
+    \hline
+    \textbf{Criteria} & \textbf{Indicator} & \textbf{Symbol} & \textbf{Type} \\
+    \hline
+      & Electricity Supply Structure Index (S) & $A_1$ & Quantitative \\
+      & Net Venue Power Consumption & $A_2$ & Quantitative\\
+     \textbf{A. Energy} & EPA eGRID regional emission factor & $A_3$ & Quantitative\\
+     \textbf{consumption} & Aggregate Round-Trip Distance of the Audience & $A_4$  & Quantitative\\
+      & Aggregate Broadcast Energy & $A_5$ & Quantitative\\
+      & Daylight Scheduling Ratio & $A_6$ & Quantitative\\
+    \hline
+      & Operational Water Consumption of the Venue & $B_1$ & Quantitative\\
+     \textbf{B. Water} & Climate-driven Turf and Field Water Use & $B_2$ & Quantitative\\
+     \textbf{Usage} & Local Water Stress & $B_3$ & Qualitative\\
+      & Water Reuse Efficiency & $B_4$ & Qualitative\\
+      \hline
+      & Food Waste Intensity & $C_1$ & Quantitative \\
+     \textbf{C. Waste} & Total Solid Waste Generation & $C_2$ & Quantitative\\ 
+     \textbf{Generation} & Reusability Rate & $C_3$ & Quantitative \\
+      & Temporary Construction Waste & $C_4$ & Quantitative\\
+     \hline
+      & Land Area Newly Occupied & $D_1$ & Quantitative\\
+      \textbf{D. Other effects}& Completeness of Waste Sorting Infrastructure & $D_2$ & Qualitative\\
+      & Environmental Management \& Certification & $D_3$ & Qualitative \\
+    \hline
+    \textbf{E. GHG} & Operational Electricity Carbon Emissions & $E_1$ & Threshold \\
+    \hline
+    \end{tabular}
+\end{center}
+
+Among the thirteen quantitative indicators listed in Table~\ref{tab:indicator}, the majority follow a \textbf{'Smaller-is-Better'} evaluation rule, indicating that a lower value corresponds to superior environmental performance. Specifically, indicators $A_2$, $A_3$, $A_4$, $A_5$, $B_1$, $B_2$, $C_1$, $C_2$, $C_4$ and $D_1$ fall into this category. This category of data will be normalized and processed through the calculation formula below to get ready to be used by our model.
+
+\begin{equation}
+    \hat{x} = 1-\frac{x-\min{(x)}}{\max{(x)}-\min{(x)}}
+\end{equation}
+
+In certain cases, a quantitative indicator follows a \textbf{'Larger-is-Better'} rule, meaning that larger values indicate a more favorable or positive environmental contribution. For instance, indicator $A_1$ and $A_6$, which represent environmental \emph{\textbf{gains}} instead of \emph{\textbf{costs}}, fall into this category. Thus, we use the formula below to normalize it into a range of $[0,1]$.
+
+\begin{equation}
+    \hat{x} = \frac{x-\min{(x)}}{\max{(x)}-\min{(x)}}
+\end{equation}
+
+Also, for some qualitative data which is hard to be collected through official reports, for example, $B_3$, $B_4$, $D_2$ and $D_3$ , we decided to evaluate it manually using the five-tier approach and normalize it into the range $[0,1]$. Since real expert evaluations are unavailable, we simulate the scoring based on documented sustainability practices of each host city. Specifically, the detailed table, Table~\ref{tab:five_tier}, of the five-tier approach is shown below.
+
+\begin{center}
+    \captionof{table}{\textbf{Five-Tier Qualitative Evaluation}}
+    \label{tab:five_tier}
+    \begin{tabular}{cp{6cm}c}
+        \hline
+        Level & \centering Description & Assigned Value \\
+        \hline 
+        1 & very high environmental impact with no control implemented & 0.0 \\
+        \hline
+        2 & Substantial impact with insufficient management employed & 0.25 \\
+        \hline
+        3 & Moderate impact with average management and control & 0.50 \\
+        \hline
+        4 & Minor environmental Impact \& well-established management system & 0.75 \\
+        \hline
+        5 & Negligible impact with outstanding environmental control & 1.0 \\
+        \hline
+    \end{tabular}
+\end{center}
+
+Since \textbf{greenhouse gas (GHG)} emissions are an integrated outcome of several other indicators, for example, energy consumption, incorporating it directly into the TOPSIS evaluation could lead to redundancy and potential double counting. Therefore, GHG emissions were treated as a separate validation criterion, or threshold, rather than a ranking indicator.
+
+\subsection{Detailed Explanation of the Indicators}
+\subsubsection*{$A_1$ Electricity Supply Structure Index (S)}
+
+After we identified all these indicators, we realized that the environmental impact caused by energy consumption is actually also strongly related to local energy supplying structure, thus, we chose to add a index represents how \textbf{environmental friendly the energy supply is}.
+
+\begin{center}
+\captionof{table}{Weights of electricity sources in the index}
+\label{tab:esourcew}
+
+\begin{tabular}{llcc}
+    \hline
+    \textbf{Category} & \textbf{Explain} & \textbf{Symbol} & \textbf{Weight}\\
+    \hline
+    Coal         & High GHG Emission and Pollution       & $w_c$ & 0.0\\
+    Oil          & High GHG, Partially Controllable      & $w_o$ & 0.1\\
+    Natural gas  & Fossil, but relatively clean          & $w_g$ & 0.3\\
+    Nuclear      & Low GHG Emission, High Risk           & $w_n$ & 0.6\\
+    Hydropower   & Renewable and stable                  & $w_h$ & 0.8\\
+    Wind         & Clean, zero GHG emission              & $w_w$ & 0.9\\
+    Solar        & Clean, sustainable, zero GHG          & $w_s$ & 1.0\\
+    \hline
+\end{tabular}
+\end{center}
+
+
+\begin{equation*}
+\text{S} = \sum_{i} p_i \times w_i = p_c w_c + p_o w_o + p_g w_g + p_n w_n + p_h w_h + p_w w_w + p_s w_s
+\end{equation*}
+
+The \textbf{Electricity Structure Index} (S) is calculated though the formula above, and the description of each energy supply and their index is given in the table~\ref{tab:esourcew} shown. We designed these weights based on GHG generation and Reusability respectively for each category of electricity. 
+
+\subsubsection*{$A_2$ Net Venue Power Consumption}
+
+The net venue power consumption is calculated as follows:
+
+\begin{equation}
+E_{\text{venue}} = \sum_t P(t)\Delta t
+\end{equation}
+
+This indicator quantifies the total electrical energy consumed by the venues during the event. It is selected because it can be reliably obtained from official reports and serves as an accurate measure of a major component of total net energy consumption.
+
+\subsubsection*{$A_3$ EPA eGRID regional emission factor }
+
+This index indicates how much carbon dioxide emission is averagely generated when a megawatt of electricity produced through local facilities.
+
+\subsubsection*{$A_4$ Aggregate Round-Trip Distance of the Audience}
+The total travel distance for all attendees is calculated as:
+
+\begin{equation}
+D_{\text{total}} = 2 \sum_{i=1}^{N} d_i
+\end{equation}
+
+This indicator provides an estimate of transportation-related energy consumption and emissions, highlighting the role of event location and accessibility.
+\subsubsection*{$A_5$ Aggregate Broadcast Energy}
+The total energy consumption of broadcast operations is given by:
+
+\begin{equation}
+E_{\text{broadcast}} = \sum_{j=1}^{m} P_j \times t_j
+\end{equation}
+
+This indicator helps identify energy-intensive broadcasting activities and supports the design of energy-saving measures.
+
+\subsubsection*{$A_6$ Daylight Scheduling Ratio}
+This ratio measures how effectively the event schedule utilizes natural daylight:
+
+\begin{equation}
+R_{\text{daylight}} = \frac{H_{\text{daylight}}}{H_{\text{total}}} \times 100\%
+\end{equation}
+ 
+A higher value implies greater utilization of natural lighting and reduced reliance on artificial illumination.
+
+\subsubsection*{$B_1$ Operational Water Consumption of the Venue}
+
+The total operational water consumption of the venue is calculated as:
+
+\begin{equation}
+V_{\text{venue}} = N_{\text{attendees}} \cdot q_{\text{sanitary}} + V_{\text{cleaning}} \quad (m^3)
+\end{equation}
+
+This formula captures the major components of operational water use, offering a practical and measurable estimate that can be derived from venue management data or event operation reports.
+
+\subsubsection*{$B_2$ Climate-driven Turf and Field Water Use}
+The turf and field irrigation water use is estimated using local climatic conditions and the standard field area, defined as:
+
+\begin{equation}
+V_{\text{turf}} = A_{\text{field}} \times q_{\text{climate}} \quad (m^3)
+\end{equation}
+
+This formulation incorporates regional climatic differences into the assessment, providing a realistic and location-sensitive estimate of irrigation water requirements.
+
+\subsubsection*{$B_3$ Local Water Stress (Qualitative)}
+
+This indicator reflects the degree of regional water scarcity. 
+It contextualizes the event’s water use within local environmental conditions—venues in high-stress regions face greater sustainability challenges.
+
+\subsubsection*{$B_4$ Water Reuse Efficiency (Qualitative)}
+
+This indicator describes the extent to which reclaimed or greywater systems are implemented at the venue. 
+It is assessed qualitatively using a five-level scoring approach, emphasizing infrastructure completeness and sustainable water management measures.
+
+\subsubsection*{$C_1$ Food Waste Intensity}
+The total food waste generated during the event is calculated as:
+
+\begin{equation}
+W_{\text{food,total}} = \sum_{i=1}^{n} W_i \quad (kg)
+\end{equation}
+
+This indicator captures the aggregate environmental impact of catering operations, aligning with the event’s overall waste footprint and serving as a direct measure of resource inefficiency.
+
+\subsubsection*{$C_2$ Total Solid Waste Generation}
+
+Data for total solid waste generation are obtained from the official sustainability report of the event, which provides waste collection and disposal records compiled by local environmental departments or contracted waste management companies.
+
+\subsubsection*{$C_3$ Reusability Rate}
+The reusability rate of event materials is determined as:
+
+\begin{equation}
+R_{\text{reuse}} = \frac{N_{\text{reusable}}}{N_{\text{total}}} \times 100\%
+\end{equation}
+
+This indicator reflects the adoption of circular economy principles and helps reduce the demand for single-use materials.
+
+\subsubsection*{$C_4$ Temporary Construction Waste}
+This indicator evaluates the sustainability of temporary infrastructure design and promotes reuse or recycling of construction materials.
+
+\subsubsection*{$D_1$ Land Area Newly Occupied}
+Data for land area newly occupied can be directly obtained or estimated from official reports related to the event. This indicator reflects the event’s spatial footprint and potential ecological disturbance caused by new land conversion.
+
+\subsubsection*{$D_2$ Completeness of Waste Sorting Infrastructure (Qualitative)}
+This qualitative indicator evaluates the adequacy of waste sorting facilities available within the venue.  
+It considers the number of sorting categories, the accessibility of bins, and the presence of clear labeling.  
+A higher score indicates a more complete and functional waste sorting system that facilitates effective recycling and waste management.
+
+\subsubsection*{$D_3$ Environmental Management and Certification (Qualitative)}
+
+This indicator assesses whether the venue or organizing committee has obtained recognized environmental management certifications such as ISO 14001 or LEED.  
+It reflects the organization’s formal commitment to sustainability and continuous improvement in environmental performance.
+
+\section{Case Study: Super Bowl LIX in New Orleans, USA}
+To better evaluate the environmental significance of mega-sport events, assess the accessibility of relevant data, and meet the HiMCM problem requirements, we selected Super Bowl LIX, held in New Orleans in 2025, as a representative case for our assessment.
+\subsection{Overview of the Event}
+
+Super Bowl LIX was held on \textit{February 9, 2025,} at the Caesars Superdome in \textit{New Orleans, Louisiana}. The event attracted \textbf{65,719 attendees}, according to official NFL record. As a nighttime indoor game played under the stadium’s fully enclosed dome, it required substantial artificial lighting throughout the event, while the access to natural and green daylight is minimal. As one of the largest annual sporting events in the United States, the Super Bowl imposes significant short-term but intensive environmental pressure on its host city.
+
+New Orleans is with humid subtropical climate with EPA eGRID regional emission factor of 0.3366 tCO$_2$e/MWh, indicating a relatively ideal nature environment and energy supplying structure for the mega-sport event to be held. Additionally, we also found several local policies aimed for controlling and reducing carbon emission. These contextual conditions determine the baseline environmental performance of the event.
+
+The next subsection quantifies the environmental performance of this event through the established indicator system.
+
+\subsection{Environmental Impact Assessment}
+For the energy-related indicators, we calculated the local electricity supply structure index, and found it's $0.44$, the eGRID SRMV emission factor is found to be 0.3366 tCO$_2$e/MWh, reflecting a moderate level carbon emission when every unit of electricity is produced. $A_2$, the net venue power consumption is estimated to be 72 MWh, while the broadcast energy consumption is approximately 20 MWh. By calculations through official ticket data and airlines, the aggregate round-trip distance for all attendees $A_4$ is estimated to be roughly 182 million kilometers. The daylight scheduling ratio $A_6$ is actually negligible, or zero, since the Super Bowl LIX was held indoors at night.
+
+Regarding water use, the venue's operational water consumption $B_1$ is around 634 m$^3$. Turf and field water demand $B_2$ is negligible for New Orleans, since the local stadium, the Caesars Superdome, used synthetic turf. The local water stress level $B_3$ is rated between 2 and 3 (low–medium) according to the WRI Aqueduct database, while the water reuse efficiency $B_4$ is evaluated as moderate (3 on the five-tier scale) due to the absence of a specialized grey-water recycling system.
+
+In terms of waste generation, the total solid waste $C_2$ is estimated as 44.7 t, based on official data and population-based estimation and roughly 13 tons is attributed to food waste $C_1$. The material reusability rate $C_3$ is assumed to be 0.6 under the coordination by NFL Green. Temporary construction and signage waste contributes approximately 3 t, which is a relatively minor share of the total waste generation.
+
+For other environmental effects, no new land was developed for the event $D_1$ is approximately 0, at least negligible, as the existing Caesars Superdome was reused. Waste-sorting facilities completeness scores 4 out of 5 due to the installation of about 200 additional recycling bins and volunteer sorting assistance. And Super Bowl LIX also got 3 out of 5 for environmental management and certification performance.
+
+\subsection{Location Sensitivity Analysis}
+Environmental impact of mega-sport events is inherently sensitive to its geographical and infrastructural context, which means the same activity can lead to completely different environmental outcomes when hosted in different cities. 
+
+A representative example is Las Vegas, Nevada, a desert city facing \textbf{extreme water stress}. Even modest water use—whether for venue operations or turf irrigation—creates disproportionately high environmental impacts. This explains why Las Vegas, despite having a modern stadium with efficient waste systems, still performs moderately in sustainability evaluations.
+
+In contrast, Atlanta demonstrates the opposite pattern. Its electricity grid is relatively \textbf{carbon-intensive}, relying heavily on fossil fuels such as natural gas and coal. As a result, the same event electricity consumption will cause a significantly higher Green House Gases emission when hosted in Atlanta compared with western states such as \textbf{Washington and California}. This sensitivity is directly captured by our indicator $A_1$, $A_3$ and the GHG threshold metric $E_1$.
+
+This baseline assessment provides the foundation for further optimization in venue selection and policy interventions to reduce the environmental footprint of future mega-events.
+
+\section{Modeling Framework}
+To evaluate and rank the cities based on our criteria, we utilized a Hierarchical Multi-Criteria Decision Model (\textbf{H-MCDM}). It integrates the Analytical Hierarchy Process (\textbf{AHP}) for weighting and the \textbf{TOPSIS} method for preference ranking.
+
+\subsection{Weighting by Analytical Hierarchy Process (AHP) method}
+In order to determine the relative importance between each main criterion and each set of sub-criteria, we employed the Analytical Hierarchy Process (AHP), which is a weighting method widely used in environmental evaluation and sustainable planning. AHP is particularly suitable for our research topic because it can convert qualitative pairwise judgments of relative importance into quantitative weights while maintaining logical consistency.
+
+After developing the hierarchical structure in previous sections, we then conducted pairwise comparisons using \textbf{Saaty's 1–9 scale}, where a larger value like 5, 7 and 9 represents a stronger dominance of one criterion over another. The AHP importance scale is presented in Table~\ref{tab:ahpscale}, and the pairwise comparison matrix for the main criteria is provided below.
+
+\vspace{3mm} 
+\noindent
+\begin{minipage}[t]{0.55\textwidth}  
+\vspace{-13mm}
+\begin{equation}
+\mathbf{M}_{\text{Main}}\, (A,B,C,D)=
+\begin{bmatrix}
+1 & 2 & 2 & 3 \\
+\tfrac{1}{2} & 1 & 1 & 2 \\
+\tfrac{1}{2} & 1 & 1 & 2 \\
+\tfrac{1}{3} & \tfrac{1}{2} & \tfrac{1}{2} & 1
+\end{bmatrix}
+\end{equation}
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.4\textwidth} % 右边 40%
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Scale & Importance \\
+\hline
+1 & Equal Importance \\
+3 & Moderate importance \\
+5 & Strong importance \\
+7 & Very strong importance \\
+9 & Extreme Importance \\
+\hline
+\end{tabular}
+\captionof{table}{AHP 1-9 Importance Scale}
+\label{tab:ahpscale}
+\end{minipage}
+
+When we finished constructing the pairwise comparison matrices for both main criteria and 5 sub criteria respectively, we computed priority weight vector by normalizing and processing the principal eigenvector of each matrix. This process help us to transform qualitative judgments and relative importance into quantitative weights for every criteria across the hierarchy.
+
+The resulting weights of the main criteria are summarized in Table~\ref{tab:maincriteria}, while the local weights of all sub-criteria are visualized in Figure~\ref{fig:criteria_donut}.
+
+\begin{center}
+    \begin{table}[h]
+        \centering
+        \resizebox{0.5\linewidth}{!}{
+        \begin{tabular}{lcc}
+        \hline
+            \textbf{Criteria} & \textbf{Weight} & \textbf{Percentage}\\
+            \hline
+            \textbf{A. Energy Consumption} & $0.4231$ & $42.31\%$\\
+            \textbf{B. Water Usage} & $0.2272$ & $22.72\%$\\
+            \textbf{C. Waste Generation} & $0.2272$ & $22.72\%$\\
+            \textbf{D. Other Effects} & $0.1225$ & $12.25\%$\\
+            \hline
+        \end{tabular}
+        }
+        \caption{Weight of each main criterion calculated by AHP}
+        \label{tab:maincriteria}
+    \end{table}
+\end{center}
+\vspace{-10mm}
+\begin{figure}[h]
+  \centering
+  \resizebox{1.0\textwidth}{!}{
+  \includegraphics[width=\textwidth]
+  {criteria_local_weights_donut_outlined.png}
+  }
+  \caption{
+    \textbf{Weight distribution by criteria.} \\
+    Energy Consumption (A), Water Usage (B), Waste Generation (C), and Other Effects (D). Each donut chart displays the relative weights of the corresponding sub-criteria.
+  }
+  \label{fig:criteria_donut}
+\end{figure}
+
+In order to make sure our pairwise comparisons are reliable, we performed a AHP consistency test via calculating consistency ratio. A weighting metrix is considered to be valid and consistent when $CR<0.10$, and all matrices used satisfies this requirement, indicates that our pairwise comparison is logically consistent.
+
+\subsection{TOPSIS Method}
+The Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) model is a mathematical model originally developed by Ching-Lai Hwang and Yoon in order to better evaluate multi-criteria decision-making problems. In our research, it was applied to rank the candidate host cities by calculating their relative closeness to the ideal solution for sustainable environmental performance. Through combining with weights calculated by AHP, TOPSIS model provides a comprehensive evaluation framework integrates multiple indicators.
+
+All quantitative factors were normalized into the range $[0,1]$ using the min-max normalization method, while qualitative indicators were evaluated through a 5-tier scoring scheme, both normalization methods were introduced earlier. After normalization, the weighted decision matrix was constructed as
+
+\begin{equation}
+    v_{ij} = w_jx_{ij}
+\end{equation}
+
+where $w_j$ is the weight determined by AHP of criterion $j$.
+
+The positive ideal solution (PIS) and negative ideal solution (NIS), which are critical in following closeness measuring, were identified as
+
+\begin{equation}
+    v_j^+ = \max_iv_{ij},\ \ \ v_j^- = \min_iv_{ij}
+\end{equation}
+
+In order to measure relative closeness of each city from the PIS and NIS, the Euclidean distances from ideal solutions were computed as:
+
+\begin{equation}
+    D_i^+ = \sqrt{\sum_j(v_{ij}-v_j^+)^2},\ \ \ D_i^- = \sqrt{\sum_j(v_{ij}-v_j^-)^2}
+\end{equation}
+
+These distances quantify how far each alternative is from the ideal (best) and anti-ideal (worst) performance, forming the basis for determining its relative closeness in the TOPSIS ranking.
+
+and the closeness coefficient was obtained as
+
+\begin{equation}
+    C_i = \frac{D_i^-}{D_i^++D_i^-}
+\end{equation}
+
+A higher value of $C_i$ suggests a more sustainable environmental performance, and the final ranking will be presented in the next Section.
+
+\section{Ranking Host Cities Using the TOPSIS Method}
+With established weighting structure using AHP and the evaluation system using TOPSIS in the previous section, we are now going to apply the integrated H-MCDM model to all candidate host cities. This section presents the closeness coefficients by TOPSIS, the ranking of final results, and the limitation evaluation of our model.
+
+\subsection{Construction of the Weighted Decision Matrix}
+Following our methodology established in the Section 5, we applied the AHP-TOPSIS H-MCDM model framework to two separated decision sets.
+
+Decision Set 1 consists of six cities that has previously hosted, or scheduled to host the Super Bowl under NFL's new sustainability assessments, includes Atlanta, Inglewood, Glendale, Las Vegas, New Orleans and Santa Clara
+
+Decision Set 2 consists of three potential host cities that have never hosted but have NFL teams, includes Seattle, Charlotte and Cleveland.
+
+For both evaluation,  weights of criteria, normalization method and TOPSIS steps applied were all the same. The only difference between two model lies on the set of alternatives being compared, thus, ideal solutions for two models are not the same. As a result, the TOPSIS closeness coefficient are only comparable within each candidate set, but not cross sets.
+
+The detailed results for each TOPSIS evaluation are presented in Section 6.2 and 6.3.
+
+\subsection{Results for Previously Hosted Cities}
+We first plly our TOPSIS model to six cities that have previously hosted, or schedule to host the Super Bowl under the NFL's modern sustainability evaluation. This process identified and ranked which city would be the most environmentally friendly choice and recommend a future re-hosting opportunity for the Super Bowl.
+
+After applying our model to the six candidate cities, we obtained the results shown below.
+
+\begin{figure}[h]
+\centering
+
+\begin{minipage}[c]{0.30\textwidth}
+\vspace{-65mm}
+\small
+\begin{center}
+\captionof{table}{TOPSIS results}
+\begin{tabular}{lcc}
+\hline
+\textbf{City} & $\textbf{C}_{\textbf{i}}$ & \textbf{Rank} \\
+\hline
+Santa Clara & 0.5541 & 1 \\
+Glendale & 0.5511 & 2 \\
+Las Vegas & 0.5129 & 3 \\
+New Orleans & 0.4148 & 4\\
+Inglewood & 0.3684 & 5\\
+Atlanta & 0.3591 & 6\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.6\textwidth}
+\centering
+\includegraphics[width=\textwidth]{TOPSIS.png}
+\caption{Ranking visualization}
+\end{minipage}
+
+\end{figure}
+The TOPSIS results indicate that Santa Clara, which is scheduled to host the Super Bowl in 2026, emerges as the most environmentally sustainable candidate for the 2029 Super Bowl. Glendale follows closely, achieving a nearly identical closeness coefficient, and is therefore identified as the second-strongest candidate among the previously hosted cities.
+
+From detailed score of each main criterion, we found that Santa Clara mostly benefited from its outstanding performance in Energy Consumption domain, while its scores in remaining categories are generally moderate. It also achieves the best performance in the GHG threshold. In contrast, Atlanta---the city with lowest TOPSIS score---records a highest GHG emission among all evaluated cities. Indicating the TOPSIS ranking and the GHG threshold results can actually mutually reinforce each other, which means that cities with lower operational emissions consistently achieve higher closeness coefficients, confirms that carbon intensity is a primary driver of overall sustainability performance.
+
+\subsection{Results for Never-Hosted Potential Cities}
+We next evaluated the three potential host cities we chosen that have never hosted a Super Bowl, includes Seattle, Charlotte and Cleveland. Due to the lack of historical data of those cities, only city-level or state-level infrastructure indicators were used to determine which location would provide the most sustainable environmental solution. For qualitative indicators or city-level factors with no direct data available, we assigned a neutral score of 0.5 within the five-tier evaluation scheme. The TOPSIS evaluation result is shown below.
+
+\begin{figure}[h]
+\centering
+\begin{minipage}[c]{0.30\textwidth}
+\vspace{-63mm}
+\small
+\begin{center}
+\captionof{table}{Potential Candidates}
+\begin{tabular}{lcc}
+\hline
+\textbf{City} & $\textbf{C}_{\textbf{i}}$ & \textbf{Rank} \\
+\hline
+Seattle & 0.6994 & 1 \\
+Charlotte & 0.4821 & 2 \\
+Cleveland & 0.2485 & 3 \\
+
+\hline
+\end{tabular}
+\end{center}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.6\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Potential.png}
+\caption{Potential Ranking visualization}
+\end{minipage}
+\end{figure}
+
+From the TOPSIS results for the three potential host cities, Seattle clearly stands out as the most sustainable first-time candidate, achieving a closeness coefficient of 0.6994, significantly higher than the other two cities. This strong performance is driven mostly by its clean electricity supply structure.
+
+In contrast, Cleveland got the lowest score of $0.2485$, largely due to Ohio's energy supplying structure: electricity supply is highly depended on coal and natural gas, which generates substantially more Green House Gases Emission than Washington's electricity, which mainly depends on hydropower. This also reinforces the consistency of our evaluation framework: cities with lower carbon burdens tend to achieve higher TOPSIS scores. 
+
+\subsection{Comparative Discussion}
+Although these two times of TOPSIS evaluations are based on different sets of alternatives, several consistent patterns emerge. Normally, cities with clean electricity supply, low water stress  and higher waste management tend to rank higher in both decision sets. Additionally, energy consumption and energy supply is considered to be most important criterion since it is not only with relatively high weight, but also the most sensitive as location varies.
+
+\subsection{Model Limitations}
+In order to make sure our model is both transparent and robust, it is necessary to objectively evaluate and acknowledge potential oversimplifications in model assumptions and structural deficiencies of model design. 
+
+\subsubsection*{Assuming each Indicator is Independent to Others} 
+In the model assumption, we assume each criteria to be independent with others. However, in reality, the connection between several criteria is obvious and significant. For example, indicator Net Venue Power Consumption is positively related with Daylight Scheduling Ratio, and the Completeness of Waste Sorting Infrastructure is related with Waste Reusability Rate. It causes some factors may be potentially implicitly double-counted.
+
+Although this independence assumption is considered to be common in H-MCDMs, it still represents a limitation of our model, and suggests more advanced models such as correlation-adjusted TOPSIS and ANP (Analytic Network Process) may better capture correlations between indicators and minimize the effect caused by interconnected nature of sustainability metrics.
+
+\subsubsection*{Polarization Effect of Result caused by Min-max Normalization}
+It is a major issue in the TOPSIS analysis of potential cities that the polarization effect due to our normalization approach: it overstretched minimal differences among an extraordinarily small sample size---only three cities are evaluated. As a result, TOPSIS scores was highly polarized, subsequently, Cleveland was disproportionately punished by the mechanism, which means its score was underestimated. However, it will not substantially affect relative ranking between each alternatives. Thus the final ranking will not be influenced. Still, the small sample size remains a limitation. Including more cities in future analyses would reduce the polarization effect and yield more stable outcomes.
+
+\subsubsection*{Oversimplification of Missing Data}
+Since they haven't hosted yet, there are no data existing for several indicators of potential hosting cities for Super Bowl, such as the Total Solid Waste Generation and Daylight Scheduling Ratio. We use 0.5, which is a moderate value for normalization, to substitute all data absent in matrices. Although this is a rational simplification, some potential risks, such as the flattening effect and reduced discrimination, may emerge. As a result, the difference between scores of each alternatives may be underestimated, and the evaluation may thus be slightly unfair.
+
+\subsection{Sensitivity Analysis}
+In order to test the reliability and robustness of our model constructed, we conducted this sensitivity analysis to analyze the performance of our model under these two indeterminacies. 
+\begin{itemize}
+    \item AHP criteria weight perturbation
+    \item Indicator data perturbation (data error)
+\end{itemize}
+
+After conducting the sensitivity analysis, we also evaluated the connection between Threshold ($E_1$) and model ranking and calculated the correlation coefficient between them.
+
+\subsubsection*{Sensitivity to Criteria Weights}
+Due to space limitations, we have omitted the process of our sensitivity analysis and directly present our results in below.
+
+\paragraph{±10\% Random Perturbation} We first conducted 2,000 simulations with ±10\% random perturbations on the main criteria weights. The results were highly robust and consistent: across all 2,000 simulations, the top position never changed---Santa Clara consistently ranked first in every single run. Illustrating a exemplary high robustness of our model in the situation with 10\% random perturbations.
+
+\paragraph{±20\% Random Perturbation} With a greater random perturbations on main criteria of 20\%, the model outcome becomes significantly less stable, but still robust. We conducted 5000 times to get more reliable results, which is now shown below in the table.
+
+\begin{table}[h]
+\centering
+\caption{Monte Carlo weight jitter ($\pm20\%$ on main-criteria weights).}
+\begin{tabular}{lcccc}
+\hline
+City & Top-1 Probability & Top-3 Probability & Avg. Rank & Rank Change Prob. \\
+\hline
+Santa Clara & 0.9148 & 1.0000 & 1.096 & 0.0852 \\
+Glendale    & 0.0852 & 1.0000 & 2.124 & 0.1240 \\
+Las Vegas   & 0.0000 & 0.9586 & 2.822 & 0.1758 \\
+New Orleans & 0.0000 & 0.0414 & 3.974 & 0.0564 \\
+Inglewood   & 0.0000 & 0.0000 & 4.985 & 0.0150 \\
+Atlanta     & 0.0000 & 0.0000 & 6.000 & 0.0000 \\
+\hline
+\end{tabular}
+\label{tab:mc}
+\end{table}
+
+The results under ±20\% random perturbation indicate that Santa Clara retains the top position in 91.48\% of the simulations, while Glendale attains the first place in the remaining 8.52\%. Demonstrating Santa Clara's advantage is highly stable even when a substantial uncertainty is introduced. The situation that Glendale be ranked on the first place occurs normally when the perturbed weights significantly underestimate energy-related indicators—Santa Clara’s strongest dimension. This outcome confirms that the model's overall ranking is robust, and the top candidate does not change unless there's a extremely and systematically shift of weights.
+
+\subsubsection*{Sensitivity to Data Perturbations}
+
+We also tested out model's sensitivity when facing data noise, since we collected and estimated some absent data that may not totally accurate and reliable.
+
+When ±5\% of random data noise was applied, the chance for Santa Clara to maintain its position of top candidate is 95\%, indicating the outcome is highly stable in this intensity of data noise. When ±10\% of data noise was introduced, the chance for Santa Clara to be the best candidate decreased to 76.6\%, and possibility for Glendale increased to 23.4\%. Although the second outcome is not as stable as it in the first, it is still adequate and rational: the baseline $\Delta C_i$ between Santa Clara and Glendale is originally small (only approximately 0.022). This evaluation confirmed that the data error influences outcome greater than weighting error do, since some of our data is originally close but highly stretched y min-max normalization method.
+
+\subsubsection*{Consistency with the GHG Emission Threshold}
+
+Our calculation shows that the Spearman correlation between $C_i$ and $-E_i$ is 0.657, indicating a moderately strong relationship. This means that cities with lower GHG emissions tend to achieve higher TOPSIS closeness coefficients, providing a desirable double-verification system that enhances the credibility and accuracy of our model. At the same time, the correlation is not excessively high, confirming that the GHG threshold contributes independent information rather than causing redundancy within the evaluation framework.
+
+\section{Extending Model to the Olympics \& Other Multi-Venue Events (Olympics Case Study)}
+
+\subsection*{Motivation of Extending the Model}
+In order to make the model we constructed previously capable for evaluating multi-venue events like the Olympics and Commonwealth Games, the model must be extended, since there are substantial differences between regional events and global sport games. In contrast to the Super Bowl, which is a one-day event held in a single stadium, the Olympic games operates across dozens of sport venues over several weeks, accommodates tens of thousands of athletes from over 190 countries globally. As a result, several environmental drivers that were negligible in the Super Bowl context become dominant criteria when evaluating the Olympics. These factors are absent in single-venue, single-day events, making them uniquely important for Olympic-scale environmental evaluation.
+
+Thus, we extend the existing AHP--TOPSIS framework by introducing an additional set of locationally sensitive criteria and reweigh each criteria by AHP with new pairwise comparison matrices based on Olympic contexts.
+
+\subsection*{Extended Criteria System for Multi-Sport Mega-Events}
+
+Based on critical features of the Olympics, such as long duration and multiple venue, we designed a new set of criteria that captures challenges unique to multi-venue, long-duration competitions.
+
+\begin{table}[!ht]
+    \centering
+    \caption{New-added Criteria Set}
+    \label{tab:newcrit}
+    \begin{tabular}{clcl}
+        \hline
+         \textbf{Symbol} & \textbf{Indicator} & \textbf{Type} & \textbf{normalization}\\
+        \hline
+         $M_1$ & Hotel Density per km$^2$ & Quantitative & Larger-is-better \\
+         $M_2$ & Venue Spatial Compactness & Qualitative & Smaller-is-Better\\
+         $M_3$ & Extreme Weather Risk & Qualitative & Smaller-is-Better \\
+         $M_4$ & Climate Heat Stress & Qualitative & Smaller-is-Better\\
+        \hline
+    \end{tabular}
+\end{table}
+
+\paragraph{$M_1$ Hotel Density per km$^2$} This indicator mainly reflects the city's capability to accommodate officials, visitors and athletes within short travel distance between hotels and venues. Higher hotel density reduces the reliance on long-distance transportation and significantly lowers GHG emissions.
+
+\paragraph{$M_2$ Venue Spatial Compactness} These indicators are fundamentally location-sensitive and represent the dominant environmental drivers in Olympic-scale events. More compact venue distribution reduces inter-venue transport demand, leading to lower energy consumption and GHG Emission.
+
+\paragraph{$M_3$ Extreme Weather Risk} Due to the relatively longer duration for Olympic games, the possibility for the event to suffer from local extreme weather will be higher. This indicator caputures the likelihood of extreme weathers like storms, flooding or heavy rainfall during multi-weekk sport events.
+
+\paragraph{$M_4$ Climate Heat Stress} Due to the high locational sensitivity of local humidity and temperature, climate varies significantly from city to city but they're not always suitable for the Olympics to be hosted. This indicator accesses the thermal stress on attendees and venues based on local climate and temperature pattern.
+
+After determining sub-criteria under this Olympics-specified indicator set,  we revised our AHP weight by reevaluating relative importance, reconstructing AHP pairwise matrix and recalculating from new pairwise matrix.
+
+\subsection*{Applying the Expanded Model: Choosing an Olympic Host City}
+To evaluate and recommend a most sustainable place for hosting Olympic Games, we choose 10 cities in total, as our candidates for hosting. Candidates include six cities that have already hosted the Olympics previously (Tokyo, Rio de Janeiro, London, Beijing, Los Angeles and Sydney) and four cities that have never hosted (Toronto, Istanbul, Buenos Aires and Cairo).
+
+After applying our new model onto those ten candidates, we got the result shown in the table below.
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{lccclcc}
+\hline
+\textbf{City} & \textbf{TOPSIS Score} & \textbf{Rank} & &\textbf{City} & \textbf{TOPSIS Score} & \textbf{Rank} \\
+\hline
+Tokyo          & 0.6418 & 1  &\hspace{5mm} &Buenos\_Aires & 0.4234 & 6  \\
+Toronto        & 0.4802 & 2  & &Sydney        & 0.3972 & 7  \\
+Rio de Janeiro & 0.4502 & 3  & &Cairo         & 0.3718 & 8  \\
+London         & 0.4420 & 4  & &Beijing       & 0.3437 & 9  \\
+Istanbul       & 0.4317 & 5  & &Los Angeles  & 0.3176 & 10 \\
+\hline
+\end{tabular}
+\end{table}
+
+As shown in the table, Tokyo ranks the first, and then Toronto and Rio de Janeiro. These cites performs better primarily due to their well-established infrastructure, public transportation and accommodation system, these systems can efficiently reduce intra-event transportation carbon emission. In contrast, cities like Beijing and Los Angeles receives lower scores due to stronger dependence on carbon-intensive electricity supply. They all achieve a relatively strong score in Mega-Event module (or at least moderate), driven by high hotel density, but are punished by low scores in other environmental categories, especially Energy Consumption (0.363–0.466). Los Angeles is also disadvantaged by high Climate Heat risks and transportation system highly depended on car. These weaknesses indicate that, despite strong large-event hosting ability, core environmental factors still dominate overall results.
+
+Overall, this result reinforces that cities with both clean electricity supplying system, mature water \& waste processing system and compact urban forms tend to be most suitable, and perform best in hosting multi-venue mega-events such as the Olympics.
+
+\subsection*{Environmental Differences Between Single-Game and Multi-Venue Mega-Events}
+
+The main environmental factors influencing multi-vanue games like the Olympics is significantly different from single-venue games like the Super Bowl. Specifically, a feature of single-venue games is a high, short peak of energy consumption, water usage and waste generation, since their duration is typically short, like one or two days. In contrast, multi-venue games exhibit a completely different feature on relative importance of each environmental factors. Since its duration is significantly longer than single-venue games, typically 2 to 4 weeks, causing a accumulation of electricity, water and waste generation and consumption. Additionally, in long duration events, the separation between venues could significantly increase transportation-driven GHG emission. Also, the sustainability of international sport events is highly depended on local infrastructure of host cities---typically includes Olympic Village, hotel density and public transportation system. Except for these, lengthened duration may also cause higher potential exposure risk to extreme weather conditions like high temperature, which is considered as an essential challenge on factor of sustainability.
+
+In conclusion, single-venue games' biggest factor influencing environmental sustainability is mainly determined by resources consumption in short term, causing it to be highly influenced by indicators like energy supplying structure and venue energy consumption. However, when evaluating multi-sport events, due to the lengthening of duration, factors like separation between venues and climatical exposure also plays a critical role on sustainability evaluation. These structural differences further confirm the rationality for us to design an criteria extension for Olympics-level sport events, and emphasized the reason why we refined our AHP weights to make our model suitable for assessing the Olympics.
+
+\section{Strategies for Cities to Improve Their Sustainability}
+Cities aiming to improve their future hosting bids could improve their sustainability performance via interventions aligned with our AHP-TOPSIS indicators like publishing policies. 
+
+For short term measures recommended to employ, cities can purchase renewable energy from cities or states nearby to offset GHG emission generated by local plants which may be relatively less friendly to environment. Cities can also deploy temporary battery storage or portable solar units to reduce effect caused by peak demand. Additionally, they can adjust the game scheduling to increase daylight usage and therefore reduce venue energy consumption, and use renewable, constructing module to build temporary buildings, to reduce construction waste.
+
+As for long term measures that governments can apply, governments could invest in local renewable power generation, such as solar roofs and wind power. They can also expand public transportation system like buses and metro. Additionally, building more bike-only paths and paths for walking is also a good way to encourage people to choose more environmental-friendly ways for transportation.
+
+Overall, cities that align infrastructure planning with cleaner energy, efficient transportation, and modern environmental management can meaningfully improve their sustainability scores and long-term desirability as hosts.
+
+
+\section{Conclusion}
+
+This study aims to develop a data-driven, expandable, and interpretable environmental sustainability assessment model to provide rational site-selection guidance for future mega-sport events, especially Super Bowl LXIII. We propose an integrated AHP–TOPSIS–Threshold framework and apply it across multiple cities. 
+
+The AHP provides us a set of indicators weights both robust and consistent, where Energy Consumption is evaluated as the most important main-criterion. TOPSIS suggested that Santa Clara is the most sustainable city for hosting again, followed by Glendale. For cities that never hosted, Seattle performs extraordinarily on energy structure and water management, ranked as the best first-time candidate. Moreover, the moderate correlation between GHG thresholds and composite scores further validates the reliability of the model’s outcomes.
+Sensitivity analyses confirmed that the model is robust under reasonable variations in weights and data. Even with ±20\% random perturbations in weights of main criteria, Santa Clara retains the top ranking in 91\% of simulations, indicating that the model’s conclusions are reliable to uncertainty within practical bounds. 
+
+We further extended the framework to make our model able to evaluate multi-venue games like the Olympics. We added a set of indicator that forms an Olympics module into our model and reweighed the new model with extension. This expanded model provides additional insight into the long-term drivers of sustainable infrastructure development. To improve their sustainability performance, cities should prioritize targeted investments in energy systems, transportation networks, and waste-management practices. Overall, the model provides a clear and practical tool for sustainability-focused host city decisions.
+
+
+\clearpage
+\addcontentsline{toc}{section}{A Letter to the National Football League
+}
+\begin{center}
+    \Large{\textbf{A Letter to the National Football League}}
+\end{center}
+
+\noindent
+\textbf{From:} Team 17375, HiMCM 2025 Competition\\
+\textbf{To:} National Football League\\
+\textbf{Subject:} Recommendation for the 2029 Super Bowl Host City Based on Environmental Sustainability Analysis\\
+
+\noindent
+Dear National Football League,
+
+We sincerely appreciate the opportunity to support the League’s ongoing commitment to environmental responsibility in future Super Bowls. As students participating in the High School Mathematical Contest in Modeling, our goal was to develop an objective, transparent, and data-driven framework that could help identify host cities capable of delivering an exceptional event while minimizing environmental impacts.
+
+Using a hierarchical evaluation system combining \textbf{energy use, water demand, waste generation, and other environmental factors}, we constructed a model that ranks cities based on their overall sustainability performance. Importantly, our approach includes two independent components: The first is a weighted multi-criteria analysis using \textbf{AHP-TOPSIS}, and the second is a separate greenhouse-gas (GHG) threshold assessment.These two components reinforce each other without double-counting, providing a reliable “dual-verification” structure for selecting sustainable host cities.
+
+Based on this framework, we respectfully recommend \textbf{Santa Clara, California} as the leading candidate for hosting the Super Bowl in 2029.
+Santa Clara performs exceptionally well because of its clean electricity supply, efficient energy use, and strong environmental infrastructure. Among previously hosted or scheduled host cities, Santa Clara achieved the highest TOPSIS sustainability score in our model and also recorded the lowest operational GHG emissions. These two results---derived from independent parts of our model---align closely, giving us strong confidence in the reliability of this recommendation.
+In addition, our extensive sensitivity tests showed that Santa Clara remained the top-ranked option in more than\textbf{ 91\% }of simulations even when model weights were altered by as much as \textbf{±20\%}. This level of stability suggests that Santa Clara’s advantages are not dependent on any single assumption but instead reflect consistently strong performance across multiple sustainability dimensions.
+
+While our primary task was to identify a host among previously hosted cities, our model also evaluated first-time candidates. \textbf{Seattle, Washington} emerged as the most sustainable new host city, largely due to its extremely clean electricity grid and strong water management. Although Seattle is not the focus of the 2029 decision, we respectfully note that it represents one of the strongest long-term options for future Super Bowl events.
+
+We understand that host-city selections must balance environmental, economic, logistical, and community considerations. Our model is not meant to replace these broader judgments, but rather to offer transparent evidence to support them. With this in mind, we hope that our analysis contributes meaningfully to the League’s sustainability goals and provides a helpful perspective in the planning process for Super Bowl LXIII.
+
+Thank you for your leadership and continued dedication to advancing sustainability in major sporting events.\\
+
+\noindent
+Respectfully, \\
+Team 17375
+
+
+\clearpage
+\bibliographystyle{siam}   % 或者其他样式：unsrt、alpha、IEEEtran 等
+\nocite{*}
+\addcontentsline{toc}{section}{References}
+\bibliography{reference}       % myrefs.bib 为你的 bib 文件名
+\section*{Appendix: Data Sources}
+For transparency and reproducibility, Table~\ref{tab:datasource} summarizes all model indicators, their conceptual definitions, and the corresponding primary data sources used in this study.
+
+\begin{table}[h!]
+\centering
+\caption{\textbf{Model Indicators and their Primary Data Sources}}
+\renewcommand{\arraystretch}{1.4}
+\resizebox{0.95\textwidth}{!}{
+\begin{tabular}{p{6.5cm} p{9cm} p{4.5cm}}
+\hline
+\textbf{Indicator} & \textbf{Description / Data Basis} & \textbf{Sources} \\
+\hline
+
+$A_1$ Electricity Supply Structure & Grid composition, fossil–renewable split & [3], [8], [21], [22] \\
+$A_2$ Net Venue Power Consumption & Stadium load estimates, peak demand & [9], [14], [10] \\
+$A_3$ Emission Factor (eGRID) & Regional CO$_2$ intensity per MWh & [21], [22] \\
+$A_4$ Audience Travel Distance & Domestic flight stage lengths, ticket allocation & [4], [16] \\
+$A_5$ Broadcast Energy & IBC + media center load & [10] \\
+$A_6$ Daylight Scheduling Ratio & Local sunrise/sunset time & [18] \\
+
+\hline
+$B_1$ Operational Water Use & Venue water consumption benchmarks & [14], stadium reports \\
+$B_2$ Turf Irrigation Demand & Artificial vs. natural turf data & [13] \\
+$B_3$ Local Water Stress & WRI Aqueduct stress index & [24], [25] \\
+$B_4$ Water Reuse Efficiency & Venue-level sustainability practice & [14], [20] \\
+
+\hline
+$C_1$ Food Waste Intensity & Event waste generation per attendee & [6], [20] \\
+$C_2$ Total Solid Waste & Official event sustainability reports & [6], [23], [15] \\
+$C_3$ Reusability Rate & Recycling / reuse infrastructure & [14], [20], [23] \\
+$C_4$ Temporary Construction Waste & Olympic Park / Super Bowl pop-up structures & [19], [15] \\
+
+\hline
+$D_1$ Land Area Newly Occupied & Venue cluster + park land footprint & [19], [11], [17], [15] \\
+$D_2$ Waste Sorting Infrastructure & Sorting policy + facility completeness & [20], [14], [23] \\
+$D_3$ Environmental Certification & LEED/ISO environmental reporting & [11], [17], [15] \\
+
+\hline
+$M_1$ Hotel Density & Accommodation density from host city reports & IOC/host NOC data \\
+$M_2$ Venue Spatial Compactness & Olympic Park layout & [1], [15], [19] \\
+$M_3$ Extreme Weather Risk & Country-level flood/drought/storm risk & [24], [25] \\
+$M_4$ Climate Heat Stress & Temperature + humidity stress level & climate archives, WMO \\
+
+\hline
+\end{tabular}
+}
+\label{tab:datasource}
+\end{table}
+
+\addcontentsline{toc}{section}{Appendix: Data Sources}
+\newpage
+\setcounter{page}{1}
+
+\begin{center}
+
+\section*{Report on Use of AI}
+
+\end{center}
+
+{
+\setlength{\parindent}{0pt}
+
+We used ChatGPT for multiple tasks during the competition:
+
+\subsection*{Usage 1: refining language}
+
+We used AI assistance solely for refining the clarity, accuracy, and academic tone of self-written paragraphs.As non-native English speakers, using AI tools for grammatical and stylistic refinement ensured our writing met academic standards and communicated ideas clearly. This assistance was ethically justified, as all conceptualization, analysis, and content development were independently completed by our team.
+
+\subsubsection*{Sample Prompt:}
+
+Hi, please help me to refine this paragraph and make it more academic \& precise, correct grammar errors, also. Don’t add any contents that is not mentioned in the paragraph:
+
+In the model assumption, we assume each criteria to be independent with others. However, in reality, the connection between several criteria is obvious and significant. For example, indicator Net Venue Power Consumption is positively related with Daylight Scheduling Ratio, and the Completeness of Waste Sorting Infrastructure is related with Waste Reusability Rate. It causes some factors may be potentially implicitly double-counted.
+
+Although this independence assumption is considered to be common in H-MCDMs, it still represents a limitation of our model, and suggests more advanced models such as correlation-adjusted TOPSIS and ANP (Analytic Network Process) may better capture correlations between indicators and minimize the effect caused by interconnected nature of sustainability metrics.
+
+\subsubsection*{Sample Output:}
+
+Here is a refined, more academic, precise, and grammatically polished version of your paragraph, without adding any new content:
+
+In the model assumptions, we treat each criterion as independent from the others. However, in practice, the relationships among several criteria are both evident and significant. For instance, the indicator Net Venue Power Consumption is positively associated with the Daylight Scheduling Ratio, and the Completeness of Waste Sorting Infrastructure is related to the Waste Reusability Rate. As a result, some factors may be implicitly double-counted.
+
+Although this independence assumption is common in H-MCDMs, it nonetheless constitutes a limitation of our model. It suggests that more advanced approaches, such as correlation-adjusted TOPSIS and ANP (Analytic Network Process), may better capture correlations among indicators and reduce the effects arising from the interconnected nature of sustainability metrics.
+
+\subsection*{Usage 2: Collecting data}
+
+Since data collection is a work that is extremely time-consuming, we choose to use AI to collect data that is directly available on internet. We asked GPT to provide references its data, and manually checked the validity and reliability of each single citation, to avoid it using unreliable or invalid sources.
+
+\subsubsection*{Sample Prompt:}
+
+Hi, help me to collect data about the eGRID SRMV index of Santa Clara’s region, provide proper and necessary information sources.
+
+\subsubsection*{Sample Output:}
+
+Below are the key eGRID numbers you’ll need (eGRID2022 summary tables; values reported by EPA):
+
+CAMX (California) — eGRID2022
+Total CO$_2$ output emission rate: 497.4 lb CO$_2$/MWh (\~ 0.2256 kg CO$_2$/kWh).  
+
+Total CO$_2$-eq output emission rate: 499.3 lb CO$_2$e/MWh.  
+Generation resource mix (percent of net generation): Coal 2.7\% ; Oil 0.1\% ; Gas 46.2\% ; Other fossil 0.8\% ; Nuclear 8.4\% ; Hydro 7.9\% ; Biomass 2.4\% ; Wind 7.2\% ; Solar 20.4\% ; Geothermal 3.9\%.  
+
+Provided citation from https://www.epa.gov/egrid/
+
+\subsection*{Usage 3: Minor proofreading of final draft}
+
+In the final stage, AI was used for minor proofreading, such as correcting typos, punctuation, and awkward phrasing. It did not alter our methodological choices, empirical results, or conclusions, but only helped ensure that the manuscript met standard academic English conventions.
+
+\subsubsection*{Sample Prompt:}
+
+[file attached]
+Hi ChatGPT, can you help us to check if there are any significant structural errors or formatting failures in this document? Tell me the position they are.
+
+\subsubsection*{Sample Output:}
+
+Below is a structural + formatting diagnostics report for your PDF “17375.pdf”, with page-level locations.
+Major Structural / Formatting Issues Found:
+
+[…]
+
+Just tell me what format you're working in.
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+\end
